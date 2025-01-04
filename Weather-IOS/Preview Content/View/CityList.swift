@@ -19,7 +19,6 @@ struct CityList: View {
                             Image(systemName: index % 2 == 0 ? "star.fill" : "star")
                                 .foregroundColor(index % 2 == 0 ? .yellow : .gray)
                         }
-                      
                     }
                     .padding()
                 }
