@@ -1,16 +1,16 @@
 import SwiftUI
 
 struct CityDetailsView: View {
-    var cityName: String
-    
+    let city: WeatherModel
+
     var body: some View {
         VStack(spacing: 20) {
-            Text(cityName)
+            Text(city.name)
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
             HStack {
-                Text("9°C")
+                Text("\(city.temperature)°C")
                     .font(.system(size: 50))
                     .fontWeight(.semibold)
                 
@@ -21,11 +21,11 @@ struct CityDetailsView: View {
                     .foregroundColor(.blue)
             }
 
-            Text("Cloudy")
+            Text(city.condition)
                 .font(.title2)
                 .foregroundColor(.gray)
 
-            Text("Expect scattered clouds throughout the day with temperatures ranging from 8°C to 12°C.")
+            Text(city.description)
                 .font(.body)
                 .multilineTextAlignment(.center)
                 .padding()
@@ -38,5 +38,5 @@ struct CityDetailsView: View {
 }
 
 #Preview {
-    CityDetailsView(cityName: "Jaipur")
+    CityDetailsView(city: WeatherModel(name: "Jaipur", temperature: 25.0, condition: "Sunny", description: "Clear skies"))
 }

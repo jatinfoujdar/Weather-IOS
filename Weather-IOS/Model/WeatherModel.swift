@@ -1,13 +1,13 @@
 import Foundation
-import SwiftUI
 
-struct WeatherModel: Identifiable {
+
+struct WeatherModel: Codable, Identifiable {
     var id = UUID()
-       var name: String
-       var temperature: Int
-       var isFavorite: Bool
-       var weatherCondition: String
-       var description: String
+    let name: String
+    let temperature: Double
+    let condition: String
+    let description: String
 }
+
 
 
