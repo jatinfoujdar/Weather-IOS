@@ -10,7 +10,7 @@ struct CityDetailsView: View {
                 .fontWeight(.bold)
             
             HStack {
-                Text("\(city.temperature)°C")
+                Text("\(String(format: "%.2f", city.temperature))°C")
                     .font(.system(size: 50))
                     .fontWeight(.semibold)
                 
