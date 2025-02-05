@@ -1,21 +1,20 @@
-
 [
   {
-    "id": 1,
     "name": "New York",
-    "temperature": "12°C",
-    "description": "Cloudy"
+    "temperature": 12.5,
+    "condition": "Cloudy",
+    "description": "A cloudy day with chances of rain."
   },
   {
-    "id": 2,
     "name": "London",
-    "temperature": "8°C",
-    "description": "Rainy"
+    "temperature": 8.3,
+    "condition": "Rainy",
+    "description": "Light showers expected throughout the day."
   },
   {
-    "id": 3,
     "name": "Tokyo",
-    "temperature": "15°C",
-    "description": "Sunny"
+    "temperature": 15.0,
+    "condition": "Sunny",
+    "description": "Clear skies with warm temperatures."
   }
 ]
