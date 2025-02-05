@@ -38,5 +38,5 @@ struct CityDetailsView: View {
 }
 
 #Preview {
-    CityDetailsView(city: WeatherModel(name: "Jaipur", temperature: 25.0, condition: "Sunny", description: "Clear skies"))
+    CityDetailsView(city: WeatherModel(name: "Jaipur", temperature: 25.0, condition: "Sunny", description: "Clear skies", favourite: true))
 }
