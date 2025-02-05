@@ -7,6 +7,7 @@ struct WeatherModel: Codable, Identifiable {
     let temperature: Double
     let condition: String
     let description: String
+    var favourite : Bool
 }
 
 

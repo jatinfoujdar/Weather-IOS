@@ -1,0 +1,21 @@
+
+[
+  {
+    "id": 1,
+    "name": "New York",
+    "temperature": "12°C",
+    "description": "Cloudy"
+  },
+  {
+    "id": 2,
+    "name": "London",
+    "temperature": "8°C",
+    "description": "Rainy"
+  },
+  {
+    "id": 3,
+    "name": "Tokyo",
+    "temperature": "15°C",
+    "description": "Sunny"
+  }
+]
